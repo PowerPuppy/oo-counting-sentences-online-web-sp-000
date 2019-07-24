@@ -24,7 +24,6 @@ if sentence.question? == true
 if sentence.exclamation? == true
    count +=1
 end}
-end
   return count
   end
 end
