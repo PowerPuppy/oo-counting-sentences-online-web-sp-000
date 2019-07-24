@@ -23,7 +23,7 @@ if sentence.question? == true
    count +=1
 if sentence.exclamation? == true
    count +=1
-end},
+end}
 
   return count
   end
