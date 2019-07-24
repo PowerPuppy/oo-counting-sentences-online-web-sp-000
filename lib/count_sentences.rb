@@ -15,16 +15,9 @@ class String
   end
 
   def count_sentences
+    punctuation = '.?!'
     count = 0
-    delimiters = ['.', '?', "!"]
-self.split(delimiters).each {|sentence| if sentence.sentence? == true
-   count +=1
-if sentence.question? == true
-   count +=1
-if sentence.exclamation? == true
-   count +=1
-end}
-
-  return count
+    self.split(" ").each { |word| count += 1 if punctuation.include?(word[-1]) }
+    count
   end
 end
